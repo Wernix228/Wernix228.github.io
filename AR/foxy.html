@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super duper model</title>
+<head/>
+<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@v6.1.1/dist/aframe-extras.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs='sourceType: webcam;'>
+    <a-marker preset='hiro' smooth='true'>
+		<a-entity gltf-model="url(foxy.glb)"
+			position="0 0.05 0"
+			scale="0.18 0.18 0.18"
+			rotation="0 0 0" animation-mixer>
+		</a-entity>
+	</a-marker>
+	<a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
