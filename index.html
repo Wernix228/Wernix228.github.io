@@ -7,19 +7,25 @@
 	<meta name="description" content="Main page">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-	<body>
-		<h1>Welcome</h1>
-		<img src="res/Ava.png" width="10%" title="Hi" alt="My avatar"><br>
-		<div>
-			<a href="projects.html" title="My projects">Projects</a><br>
-			<span><a href="AR/index.html">AR</a></span>
-		</div>
-		<form action="" method="post">
+<body>
+	<header>
+		<img src="res/Ava.png" width="5%" title="Hi" alt="My avatar">
+	</header>
+	<progress max="100"></progress>
+	<main>
+		<a href="projects.html" title="My projects" style="color: #ff5900">Projects</a><br>
+		<span><a href="AR/index.html" style="color: black">AR</a></span><br><br>
+	</main>
+	<form action="" method="post">
 			<label hidden="hidden">
-				<label>Enter name</label>
-				<input type="text" placeholder="name" value="user" maxlength="18">
+				<input type="color"><br>
+				<input type="date"><br>
+				<label for="user_name">Enter name</label><br>
+				<input type="text" placeholder="name" value="user" maxlength="18" id="user_name"><br>
+				<label>Enter password</label><br>
+				<input type="password">
 			</label>
 		</form>
-		<script src="js/main.js"></script>
-	</body>
+	<script src="js/main.js"></script>
+</body>
 </html>
