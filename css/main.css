@@ -1,3 +1,6 @@
+body{
+    background: #1c1c1c;
+}
 .links {
     color: black;
     text-decoration: none;
@@ -8,6 +11,6 @@
     cursor: pointer;
 }
 .links:visited{
-    color: gray;
+    color: #646464;
     text-decoration: none;
 }
