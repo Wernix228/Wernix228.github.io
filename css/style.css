@@ -9,6 +9,7 @@ body{
     background-image: url("../res/background.jpg");
     background-repeat: no-repeat;
     /*background-position: center;*/
+    background-color: black;
     background-size: cover;
 }
 header, footer{
