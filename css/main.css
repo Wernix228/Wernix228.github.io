@@ -1,52 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Russo+One&display=swap');
-
-body{
-    background-image: url("../res/background.jpg");
-    background-repeat: no-repeat;
-    /*background-position: center;*/
-    background-size: cover;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.links {
-    color: #930000;
-    text-decoration: none;
-    font-family: "Russo One", sans-serif;
+:root {
+	--index: calc(1vw + 1vh);
 }
-.links:hover {
-    color: orange;
-    text-decoration: none;
-    cursor: pointer;
+@font-face {
+	font-family: kamerik-k;
+	src: url(../fonts/kamerik205-heavy.woff2);
 }
-.links:visited{
-    color: #646464;
-    text-decoration: none;
+body {
+	font-family: kamerik-k;
+	color: #fff;
+	overflow-x: hidden;
 }
-.main-links{
-    text-align: center;
-    font-size: 3em;
-    word-spacing: 10em;
+.scene {
+	height: 550vh;
 }
-#main-block{
-    margin: -10px;
-    width: 100vw;
-    height: 10vh;
-    background-color: #000000;
-    border-bottom: 2px solid darkred;
-/*border-bottom-left-radius: 30px;*/
-/*border-bottom-right-radius: 30px;*/
+.layer {
+	height: 100vh;
+	width: 100vw;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation-timeline: scroll();
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+	animation-range: 0 300vh;
 }
 
-#projects{
-    margin-left: 10em;
-    margin-top: 1em;
-    float: left;
+.layer:nth-child(1) { animation-name: animation-1; }
+@keyframes animation-1 { to { scale: 1.25; } }
+
+.layer:nth-child(2) { animation-name: animation-2; }
+@keyframes animation-2 { to { scale: 1.275; } }
+
+.layer:nth-child(3) { animation-name: animation-3; }
+@keyframes animation-3 { to { scale: 1.5; } }
+
+.layer:nth-child(4) { animation-name: animation-4; }
+@keyframes animation-4 { to { scale: 2; } }
+
+.layer:nth-child(5) {
+	opacity: 0;
+	animation-range: 250vh 300vh;
+	animation-name: animation-end;
 }
-#ar{
-    margin-right: 10em;
-    margin-top: 1em;
-    float: right;
+@keyframes animation-end { to { opacity: 1; } }
+
+.layer__content {
+	padding: 4vh 4.75vw;
+	backdrop-filter: blur(25px) brightness(.98);
+	animation-timeline: scroll();
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+	animation-range: 0 45vh;
+	animation-name: animation-head;
 }
-#Avatar{
-    margin-left: 0;
-    float: left;
+@keyframes animation-head { to { opacity: 0; filter: blur(20px); } }
+
+.layer__content h1 {
+	text-transform: uppercase;
+	font-size: calc(var(--index) * 4.5);
+	text-align: center;
+	line-height: .9em;
+	letter-spacing: -.15vw;
 }
+.layer__end h3 {
+	font-size: 4rem;
+	position: relative;
+}
+.layer__end::before {
+	content: '';
+	background-color: #010B19;
+	inset: 0;
+	position: absolute;
+	opacity: 0;
+	animation-timeline: scroll();
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+	animation-range: 300vh 450vh;
+	animation-name: animation-bg;
+}
+@keyframes animation-bg { to { opacity: 1; } }
