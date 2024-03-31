@@ -45,26 +45,19 @@ main{
     text-decoration: none;
 }
 .main-links{
-    text-align: center;
-    font-size: 3em;
-    word-spacing: 10em;
-}
-#projects{
+    color: #930000;
+    text-decoration: none;
+    font-family: "Russo One", sans-serif;
     margin-left: 10em;
     margin-top: 1em;
     float: left;
 }
-#ar{
-    margin-right: 10em;
-    margin-top: 1em;
-    float: right;
+.main-links:hover{
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
 }
 #Avatar{
     margin-left: 0;
     float: left;
-}
-#scrolling{
-    margin-left: 10em;
-    margin-top: 1em;
-    float:left;
 }
