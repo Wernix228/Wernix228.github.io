@@ -2,7 +2,7 @@
   src="https://github-readme-stats.vercel.app/api?username=Wernix228&show_icons=true&theme=radical"
   alt="Anurag's GitHub stats"
 />
-<a href="https://github.com/anuraghazra/github-readme-stats">
+<!--<a href="https://github.com/anuraghazra/github-readme-stats">
   <img
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wernix228&layout=compact"
     alt="Top Langs"
@@ -13,8 +13,8 @@
     src="https://www.codewars.com/users/username/badges/large"
     alt="codewars"
   />
-</a> -->
+</a>
 <img
   src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark"
   alt="Quotes"
-/>
+/>-->
